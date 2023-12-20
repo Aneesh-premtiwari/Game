@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body class="preload">
+    <div class="container">
+      <header class="header">
+        <img src="./images/logo.svg" alt="logo" class="logo" />
+        <div class="score">
+          <div
+            class="score__title"
+            style="display: flex; justify-content: center"
+          >
+            computer score
+          </div>
+          <div class="score__number" id="comp_score">0</div>
+        </div>
+        <div class="score">
+          <div class="score__title">Your score</div>
+          <div class="score__number" id="your_score">0</div>
+        </div>
+      </header>
+      <section class="game">
+        <button class="choice-btn" data-choice="paper">
+          <div class="choice paper">
+            <img src="./Myimgs/icons8-hand-64 1.png" id="paper" alt="Paper" />
+          </div>
+        </button>
+        <button class="choice-btn" data-choice="scissors">
+          <div class="choice scissors">
+            <img src="./Myimgs/17911 1.png" id="sci" alt="Scissors" />
+          </div>
+        </button>
+        <button class="choice-btn" data-choice="rock">
+          <div class="choice rock">
+            <img src="./Myimgs/icons8-fist-67 1.png" id="rock" alt="Rock" />
+          </div>
+        </button>
+      </section>
+    </div>
+
+    <section class="results hidden">
+      <h2 class="results__heading">you picked</h2>
+      <h2 class="results__heading">computer picked</h2>
+      <div class="results__result"></div>
+      <div class="results__winner hidden">
+        <h3 class="results__text"></h3>
+        <button class="next-btn" tabindex="1" id="next">Next</button>
+        <button class="play-again">play again</button>
+      </div>
+      <div class="results__result"></div>
+    </section>
+
+    <button class="rules-btn" tabindex="1" id="rules">rules</button>
+    <div class="modal">
+      <div class="modal__container">
+        <header class="modal__header">
+          <button class="close-btn">
+            <h2 class="modal__heading">Rules</h2>
+            <img src="./images/icon-close.svg" alt="Close Button" />
+            <section id="rule">
+              <ul
+                style="
+                  margin-left: 200px;
+                  margin-right: 200px;
+                  background-color: rgb(244, 252, 249);
+                  margin-top: 40px;
+                  color: black;
+                "
+              >
+                <li>
+                  Rock beats scissors, scissors beat paper, and paper beats
+                  rock.
+                </li>
+                <li>
+                  Agree ahead of time whether you'll count off "rock, paper,
+                  scissors,
+                </li>
+                <li>
+                  shoot" or just "rock, paper, scissors. Use rock, paper,
+                  scissors to settle minor decisions or simply play to pass the
+                  time
+                </li>
+                <li>
+                  If both players lay down the same hand, each player lays down
+                  another hand
+                </li>
+              </ul>
+            </section>
+          </button>
+          <!-- <button class="next-btn" tabindex="1" id="rules">next</button>
+    <div class="modal">
+      <div class="modal__container">
+        <header class="modal__header">
+          <h2 class="modal__heading">next </h2>
+          <button class="close-btn">
+            <img src="./images/icon-close.svg" alt="Close Button" />
+            <section id="next">
+              <ul style="margin-left: 200px; margin-right: 200px;background-color: rgb(244, 252, 249);margin-top: 40px;color: black;"> -->
+        </header>
+        <!-- <img
+          src="./images/image-rules.svg"
+          alt="Rules Image"
+          class="rules-img"
+        /> -->
+      </div>
+    </div>
+  </body>
+</html>
