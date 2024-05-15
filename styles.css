@@ -281,8 +281,8 @@ body {
 /* next button  */
 .next-btn {
   position: absolute;
-  bottom: 4rem;
-  right: 44rem;
+  bottom: -2rem;
+  right: 36rem;
   background: none;
   outline: none;
   border: 2px solid var(--outline);
